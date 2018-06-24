@@ -1,0 +1,243 @@
+@import "vars"
+
+/*==========  Offer_css  ==========*/
+section.offer
+	background: $grey
+	color: $white
+	transform: skewY(-5.6deg)
+	padding: 163px 0 237px
+	.container
+		transform: skewY(5.6deg)
+	h2
+		margin-top: 0
+	p
+		font-size: 18px
+		margin-top: 70px
+		font-weight: 500
+	.left-img
+		display: block
+		width: 477px
+		position: absolute
+		top: 14px
+		left: -82px
+	.ellipse-box
+		height: 45px
+		margin-top: 60px
+		.ellipse
+			border: 2px solid #3b3b3b
+			border-radius: 50%
+			float: left
+			padding: 4px
+			span
+				font-size: 18px
+				color: #fff
+				width: 42px
+				height: 42px
+				display: table-cell
+				vertical-align: middle
+				text-align: center
+				background: #3b3b3b
+				border-radius: 50%
+		.ellipse.active
+			border: 2px solid $blue
+			span
+				background: $blue
+		.hr
+			float: left
+			margin-top: 25px
+			background: #3b3b3b
+	form
+		margin-top: 19px
+		position: relative
+		h4
+			margin-top: 61px
+			margin-bottom: 19px
+			font-size: 20px
+			font-weight: bold
+		.form
+			&+.form
+				display: none
+			.form-item
+				margin-top: 50px
+			label
+				padding: 5px 0px 5px 33px
+			input[type=radio]
+				display: none
+				+ label
+					background: url('../img/radio.png')
+				&:checked + label
+					background: url('../img/radio-checked.png')
+				+ label, &:checked + label
+					background-repeat: no-repeat
+					background-position: center left
+					cursor: pointer
+			.btn-box
+				text-align: left
+				margin-top: 28px
+			label.text
+				margin-bottom: 0px
+				padding-left: 9px
+				font-size: 14px
+				color: #a4a4a4
+			input[type="text"], textarea
+				width: 100%
+				display: block
+				background: none
+				border: none
+				border-bottom: 1px solid #a3a3a3
+				margin-top: -25px
+			.personal
+				margin-top: 43px
+				label
+					padding-left: 29px
+					color: #cbcbcb
+				input
+					display: none
+				input + label
+					background: url('../img/input-no-checked.png')
+				input:checked + label
+					background: url('../img/input-checked.png')
+				input + label, input:checked + label
+					background-repeat: no-repeat
+					background-position: center left
+@media(max-width: 991px)
+	section.offer
+		background: $grey
+		color: $white
+		margin-top: 67px
+		.top-left-grey
+			height: 191px
+		.bottom-right-grey
+			height: 191px
+			margin-top: 140px
+		h2
+			margin-top: 69px
+		p
+			font-size: 18px
+			margin-top: 70px
+			font-weight: 500
+		.left-img
+			display: block
+			width: 477px
+			position: absolute
+			top: 14px
+			left: -82px
+		.right-box
+			padding-left: 80px
+			.ellipse-box
+				height: 45px
+				margin-top: 60px
+				.ellipse
+					border: 2px solid #3b3b3b
+					border-radius: 50%
+					float: left
+					padding: 4px
+					span
+						font-size: 18px
+						color: #fff
+						width: 42px
+						height: 42px
+						display: table-cell
+						vertical-align: middle
+						text-align: center
+						background: #3b3b3b
+						border-radius: 50%
+				.ellipse.active
+					border: 2px solid $blue
+					span
+						background: $blue
+				.hr
+					float: left
+					margin-top: 25px
+					background: #3b3b3b
+			h4
+				margin-top: 61px
+				font-size: 20px
+				font-weight: bold
+			form
+				margin-top: 19px
+				label
+					padding: 5px 0px 5px 33px
+				input[type=radio]
+					display: none
+					+ label
+						background: url('../img/radio.png')
+					&:checked + label
+						background: url('../img/radio-checked.png')
+					+ label, &:checked + label
+						background-repeat: no-repeat
+						background-position: center left
+						cursor: pointer
+				.btn-box
+					margin-top: 28px
+@media(max-width: 767px)
+	section.offer
+		background: $grey
+		color: $white
+		margin-top: 67px
+		.top-left-grey
+			height: 191px
+		.bottom-right-grey
+			height: 191px
+			margin-top: 140px
+		h2
+			margin-top: 69px
+		p
+			font-size: 14px
+			margin-top: 70px
+			font-weight: 500
+		.left-img
+			display: block
+			width: 477px
+			position: absolute
+			top: 14px
+			left: -82px
+		.right-box
+			padding-left: 0px
+			.ellipse-box
+				height: 25px
+				margin-top: 60px
+				.ellipse
+					border: 2px solid #3b3b3b
+					border-radius: 50%
+					float: left
+					padding: 4px
+					span
+						font-size: 11px
+						color: #fff
+						width: 25px
+						height: 25px
+						display: table-cell
+						vertical-align: middle
+						text-align: center
+						background: #3b3b3b
+						border-radius: 50%
+				.ellipse.active
+					border: 2px solid $blue
+					span
+						background: $blue
+				.hr
+					float: left
+					margin-top: 17px
+					background: #3b3b3b
+					width: 14px
+			h4
+				margin-top: 61px
+				font-size: 20px
+				font-weight: bold
+			form
+				margin-top: 19px
+				label
+					padding: 5px 0px 5px 33px
+				input[type=radio]
+					display: none
+					+ label
+						background: url('../img/radio.png')
+					&:checked + label
+						background: url('../img/radio-checked.png')
+					+ label, &:checked + label
+						background-repeat: no-repeat
+						background-position: center left
+						cursor: pointer
+				.btn-box
+					margin-top: 28px

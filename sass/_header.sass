@@ -1,0 +1,259 @@
+@import "vars"
+
+/*==========  Header_css  ==========*/
+header
+	.header-bg
+			background: url('../img/header-bg.png') no-repeat no-repeat
+			background-position: center bottom
+			position: relative
+			z-index: 999
+	nav.mobile
+		position: fixed
+		z-index: 99999
+		width: 100%
+		height: 100%
+		display: none
+		background: #000
+		.nav-button
+			.nav-hr
+				&:first-child
+					transform: rotate(45deg) translateY(4px) translateX(4px)
+				&:last-child
+					transform: rotate(-45deg) translateY(-4px) translateX(4px)
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			text-align: center
+			li
+				display: block
+				a
+					font-size: 15px
+					color: $white
+					transition: all .3s
+					display: block
+					padding: 30px 0
+					text-align: center
+					&:hover
+						background: #0d0d0d
+						text-decoration: none
+
+	.table
+		display: table
+		width: 100%
+		margin: 0
+	.table-cell
+		height: 130px
+		width: inherit
+		display: table-cell
+		vertical-align: middle
+		transition: all .5s
+	.navigation
+		position: absolute
+		top: 0
+		width: 100%
+		transition: all .5s
+		.logo
+		.logo.fixed
+			display: none
+		nav
+			ul
+				margin: 0
+				padding: 0
+				list-style-type: none
+				text-align: center
+				li
+					display: inline-block
+					margin: 0 15px
+					a
+						font-size: 15px
+						color: $white
+						transition: all .3s
+						&:hover, &.mPS2id-clicked
+							color: $blue
+						text-decoration: none
+		.phone
+			color: $white
+			text-align: right
+			.fa-phone
+				color: $blue
+				font-size: 16px
+				margin-right: 10px
+			.phone-number
+				font-size: 20px
+				font-weight: bold
+				a
+					color: #fff
+					text-decoration: none
+					transition: all .5s
+					&:hover
+						color: $blue
+						text-decoration: none
+			.work-time
+				font-size: 12px
+				line-height: 1.2
+			a.btn
+				font-size: 12px
+				padding: 8px 22px
+				margin-top: 15px
+				box-shadow: 0 6px 12px rgba(10, 178, 201, 0.23)
+				&:hover
+					box-shadow: none
+	.navigation.fixed
+		box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.06)
+		z-index: 9999
+		position: fixed
+		top: -75px
+		.table
+			height: 75px
+		.table-cell
+			height: 75px
+		.logo
+			display: none
+		.logo.fixed
+			display: block
+		background: #fff
+		nav
+			ul
+				margin: 0
+				padding: 0
+				list-style-type: none
+				text-align: center
+				li
+					display: inline-block
+					margin: 0 15px
+					a
+						font-size: 15px
+						color: #000
+						transition: all .3s
+						&:hover, &.mPS2id-clicked
+							color: $blue
+						text-decoration: none
+		.phone
+			color: #000
+			a
+				color: #000
+			a.btn
+				display: none
+	h1
+		font-family: 'Roboto Condensed', arial
+		font-size: 50px
+		color: $white
+		text-transform: uppercase
+		margin-top: 243px
+		line-height: 1.2
+		span
+			font-size: 40px
+			text-transform: none
+			margin-top: 5px
+	.text-center
+		color: $white
+		.line
+			margin-top: 17px
+		p.one
+			font-size: 18px
+			margin-top: 34px
+			line-height: 1.5
+		p.two
+			color: #c2c2c2
+			font-size: 14px
+			margin-top: 23px
+		.btn-box
+			margin-top: 54px
+		.vniz
+			margin-top: 117px
+			margin-bottom: 172px
+			a
+				animation: pulse 2s infinite
+	.bottom-grey-r
+		z-index: 1
+		transform: skewY(5.6deg) translateY(-170%)
+@keyframes pulse
+	0%
+		opacity: 1
+  
+	50%
+		opacity: 0.5
+  
+	100%
+		opacity: 1
+@media(max-width: 1199px)
+	header
+		.navigation, .navigation.fixed
+			nav
+				ul
+					li
+						margin: 0 10px
+@media(max-width: 991px)
+	header
+		.nav-button
+			width: 32px
+			margin: auto
+			position: relative
+			.nav-hr
+				width: 32px
+				height: 2px
+				background: #fff
+				margin-bottom: 10px
+		.navigation.fixed
+			.nav-button
+				.nav-hr
+					background: #000
+		.navigation
+			.phone
+				.fa-phone
+				.phone-number
+					font-size: 18px
+				.work-time
+					font-size: 11px
+				a.btn
+		h1
+			font-size: 42px
+		.text-center
+				p.one
+					font-size: 16px
+@media(max-width: 767px)
+	header
+		nav.mobile
+			.nav-button
+				float: right
+		.phone
+			color: $white
+			text-align: right
+			.fa-phone
+				color: $blue
+				font-size: 16px
+				margin-right: 10px
+			.phone-number
+				font-size: 15px
+				font-weight: bold
+			.work-time
+				font-size: 10px
+				line-height: 1.2
+			a.btn
+				font-size: 12px
+				padding: 8px 22px
+				margin-top: 0
+				box-shadow: 0 6px 12px rgba(10, 178, 201, 0.23)
+		.navigation
+			nav
+				.nav-button
+					width: 32px
+					float: right
+					.nav-hr
+						width: 32px
+						height: 2px
+						background: #fff
+						margin-bottom: 10px
+				ul
+					display: none
+					li
+						margin: 0 10px
+						margin-top: 51px
+		h1
+			font-size: 30px
+			span
+				font-size: 24px
+		.text-center
+				p.one
+					font-size: 16px

@@ -1,0 +1,234 @@
+@import "vars"
+@import "fonts"
+
+*, *:focus, *:active, a, a:focus, a:active, .btn, .btn:focus, .btn:active
+	outline: none
+	text-decoration: none
+	user-select: none
+a
+	color: $blue
+	text-decoration: underline
+	transition: all .5s
+	&:hover, &:focus
+		color: $blue
+		text-decoration: none
+	&:active
+		color: #9de0e9
+body
+	min-width: 350px
+	font-size: 16px
+	line-height: 1.7
+	font-family: 'Roboto', arial
+	color: $black
+	.wrapper
+		position: absolute
+		width: 100%
+		height: 100%
+		z-index: -1
+		.line
+			height: 100%
+			width: 10px
+			background: rgba(0,0,0,0.08)
+form
+	.form-item
+		position: relative
+		label
+			margin-bottom: 0px
+			padding-left: 9px
+			position: absolute
+			width: 100%
+			font-size: 14px
+			color: #a4a4a4
+			top: 0
+			z-index: 0
+			transition: all .5s
+		input[type="text"], textarea
+			width: 100%
+			display: block
+			background: none
+			border: none
+			border-bottom: 1px solid #a3a3a3
+			margin-top: 25px
+			position: relative
+			z-index: 1
+			&:focus+label, &:active+label, &:valid+label
+				transform: scale(.8) translateY(-35px)
+		textarea
+			margin-top: 50px
+			height: 32px
+			resize: none
+			transition: height .5s
+	.personal
+		margin-top: 10px
+		label
+			color: #868686
+			padding-left: 29px
+		input
+			display: none
+		input + label
+			background: url('../img/input-no-checked.png')
+		input:checked + label
+			background: url('../img/input-checked.png')
+		input + label, input:checked + label
+			background-repeat: no-repeat
+			background-position: top 8px left
+	.btn-box
+		margin-top: 46px
+		margin-bottom: 27px
+img
+	max-width: 100%
+	pointer-events: none
+hr
+	border-top: 1px solid #ececec
+.hr
+	width: 30px
+	height: 2px
+	background: $blue
+h2
+	font-family: 'Roboto Condensed', arial
+	font-size: 50px
+	text-align: center
+	text-transform: uppercase
+	line-height: 1.2
+	background: none
+	span
+		text-transform: none
+		font-size: 40px
+section
+	position: relative
+	z-index: 1
+.top-grey, .bottom-grey, .top-grey-l, .bottom-grey-r
+	background: #f2f2f2
+	height: 155px
+.top-grey
+	transform: skewY(-5.6deg) translateY(112%)
+.bottom-grey
+	transform: skewY(-5.6deg) translateY(-112%)
+.top-grey-l
+	transform: skewY(5.6deg) translateY(112%)
+.bottom-grey-r
+	transform: skewY(5.6deg) translateY(-112%)
+img.line
+	margin-top: 19px
+a.btn, button.btn
+	color: $white
+	background: $blue
+	font-weight: bold
+	border-right: 6px
+	transition: all .3s
+	&:hover, &:focus
+		background-color: rgb(31, 197, 220)
+		color: #fff
+	&:active
+			background: #9de0e9
+.btn-box
+	a.btn, button.btn
+		font-size: 16px
+		padding: 15px 43px
+		display: inline-block
+		position: relative
+		border: none
+		border-radius: 6px
+		font-weight: bold
+		margin: 14px
+		&:before, &:after
+			content: ""
+			width: calc(100% + 14px)
+			height: calc(100% + 14px)
+			opacity: 1
+			transition: opacity .35s,transform .35s
+			position: absolute
+			top: -7px
+			bottom: -7px
+			right: -7px
+			left: -7px
+			border-radius: 6px
+		&:before
+			border-top: 1px solid $blue
+			border-bottom: 1px solid $blue
+			transform: scale(1)
+		&:after
+			border-left: 1px solid $blue
+			border-right: 1px solid $blue
+			transform: scale(1)
+		&:hover
+			background: rgb(31, 197, 220)
+			box-shadow: 0px 12px 20px rgba(10, 178, 201, 0.3)
+		&:hover:before
+			transform: scale(0, 1)
+		&:hover:after
+			transform: scale(1, 0)
+		&:active
+			background: #9de0e9
+.mfp-inline-holder .mfp-content
+	width: auto
+	background: none
+	border: 1px solid #fff
+	padding: 10px
+	margin: 50px 0
+	button.mfp-close
+		position: absolute
+		top: -20px
+		right: -20px
+		display: table-cell
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		vertical-align: middle
+		text-align: center
+		background: #fff
+		color: $blue
+		font-weight: bold
+		opacity: 1
+		transition: all .5s
+		&:hover
+			transform: rotate(90deg)
+	form
+		background: #fff
+		padding: 50px 70px
+		max-width: 400px
+		h3
+			margin: 0
+			margin-bottom: 25px
+			font-weight: bold
+		.form-item
+			margin-bottom: 15px
+		.btn-box
+			margin-bottom: 0
+			margin-top: 20px
+	#politica
+		background: #fff
+		max-width: 800px
+		padding: 15px
+		h2
+			font-size: 1.8em
+		p
+			text-indent: 25px
+	#otpravleno, #otkaz
+		max-width: 560px
+		background: #fff
+		padding: 25px
+
+
+
+@media(max-width: 991px)
+	h2
+		font-size: 42px
+		span
+			font-size: 32px
+@media(max-width: 767px)
+	h2
+		font-size: 30px
+		span
+			font-size: 24px
+@import "header"	
+@import "repairs"
+@import "benefits"
+@import "prices"
+@import "think-head"
+@import "portfolio"
+@import "offer"
+@import "answers"
+@import "contacts"
+@import "footer"
+

@@ -1,0 +1,112 @@
+@import "vars"
+
+/*==========  Answers_css  ==========*/
+section.answers
+	h2
+		margin-top: 10px
+	.line
+		margin-bottom: 77px
+	.question
+		box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.08)
+		font-size: 20px
+		font-weight: bold
+		padding: 20px 93px 20px 68px
+		margin-bottom: 30px
+		cursor: pointer
+		background: #fff
+		.plus
+			float: right
+			color: $blue
+			font-weight: easy
+			font-size: 24px
+			transition: all .3s
+			&.rotate
+				transform: rotate(45deg)
+	.answer-box
+		padding: 0 68px
+		margin-bottom: 26px
+		display: none
+		.answer
+			border-left: 1px solid $blue
+			padding: 23px 60px 23px 27px
+		p
+			line-height: 1.625
+			margin-bottom: 21px
+		p.link
+			margin-top: 30px
+			margin-bottom: 2px
+			a
+				font-weight: bold
+				text-decoration: underline
+				transition: all .5s
+				&:hover
+					text-decoration: none
+	.hide-question
+		display: none
+	.btn-box
+		margin-top: 28px
+@media(max-width: 991px)
+	section.answers
+		h2
+			margin-top: 66px
+		.line
+			margin-bottom: 77px
+		.question
+			box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.08)
+			font-size: 16px
+			font-weight: bold
+			padding: 20px 50px 20px 50px
+			margin-bottom: 30px
+			.plus
+				float: right
+				color: $blue
+				font-weight: easy
+				font-size: 24px
+		.answer-box
+			padding: 0 50px
+			margin-bottom: 26px
+			.answer
+				border-left: 1px solid $blue
+				padding: 23px 60px 23px 27px
+			p
+				line-height: 1.625
+				margin-bottom: 21px
+			p.link
+				margin-top: 30px
+				margin-bottom: 2px
+				a
+					font-weight: bold
+					text-decoration: underline
+@media(max-width: 991px)
+	section.answers
+		h2
+			margin-top: 66px
+		.line
+			margin-bottom: 77px
+		.question
+			box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.08)
+			font-size: 14px
+			font-weight: bold
+			padding: 20px 15px 20px 15px
+			margin-bottom: 30px
+			.plus
+				float: right
+				color: $blue
+				font-weight: easy
+				font-size: 24px
+		.answer-box
+			padding: 0 15px
+			margin-bottom: 26px
+			.answer
+				border-left: 1px solid $blue
+				padding: 23px 60px 23px 27px
+			p
+				line-height: 1.625
+				margin-bottom: 21px
+			p.link
+				margin-top: 30px
+				margin-bottom: 2px
+				a
+					font-weight: bold
+					text-decoration: underline
+		.btn-box
